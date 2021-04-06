@@ -1,0 +1,15 @@
+.title{
+    color:#009AE0;
+    margin-top:1em;
+}
+
+.line{
+    border-left: 3px solid #FF9B52;
+    padding-left: 15px;
+}
+
+.resp{
+    background: #FFFFFF;
+    border: 1px dashed #AAAAAA;
+    box-sizing: border-box;
+}

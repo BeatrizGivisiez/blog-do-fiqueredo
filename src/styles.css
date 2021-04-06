@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Colors */
+:root {
+    --azul: #03A9F4;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #939393;
+}
+
+/* Resets */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Elementos base*/
+html { 
+    box-sizing:border-box;
+    color: var(--preto);
+    font-size:100%
+}
+
+body{
+    background: var(--branco);
+    font-family: 'Roboto';    
+    color: var(--preto);
+    margin: 0 auto;
+ }
+
+img { border:none;
+    max-width:100%;
+}
+
+a { 
+    color:#009AE0;
+    display:inline-block;
+}
+

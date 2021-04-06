@@ -1,5 +1,18 @@
-# Instruções
+# WayCarbon
+* Projeto de avaliação técnica para empresa WayCarom. 
+* Versão do [Angular CLI](https://github.com/angular/angular-cli) 8.2.0.
 
+## Bootstrap
+* Instalação do bootstrap na pasta raiz do projeto `npm install bootstrap --save`.
+* Adicionado o import `@import '~bootstrap/dist/css/bootstrap.min.css';` no arquivo de estilo global `src/styles.css` para aplicação do framework de responsividade.
+* Versão do [Bootstrap](https://www.npmjs.com/package/bootstrap) 4.6.0.
+
+### ngx-bootstrap
+* Adicionado `ngx-bootstrap` biblioteca que dá suporte ao boostrap em sua versão 3 e 4.
+* O legal dele é que utiliza os mesmos estilos, todos os componentes foram recriado e contém o mesmo comportamento, podendo utiliza as tags e classes do css bootstrap porém com código angular.
+* Comando de instalação: `npm install ngx-bootstrap --save`.
+
+# Instruções
 Este projeto implementa a tela de visualização de post do "Blog do Figueiredo". Ele foi feito em Angular 10 e já possui os componentes e funcionalidades básicas para exibir um post e seus comentários. Um protótipo de alta fidelidade foi desenvolvido para a tela mas seu estilo ainda não foi replicado no projeto. Sua tarefa consistirá em:
 
 1. Modificar o código para que a seção de comentários mostre as respostas a um comentário de forma aninhada. A implementação atual mostra os comentários como uma lista.

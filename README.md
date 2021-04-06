@@ -1,6 +1,8 @@
 # WayCarbon
 * Projeto de avaliação técnica para empresa WayCarom. 
-* Versão do [Angular CLI](https://github.com/angular/angular-cli) 8.2.0.
+* Versão do [Angular CLI](https://github.com/angular/angular-cli)  <br>
+(Utilizei o notebook da empresa o qual a intalação do Angular de forma -g "global"). <br> 
+**Desenvolvido por Beatriz Givisiez**
 
 ## Bootstrap
 * Instalação do bootstrap na pasta raiz do projeto `npm install bootstrap --save`.
@@ -12,14 +14,19 @@
 * O legal dele é que utiliza os mesmos estilos, todos os componentes foram recriado e contém o mesmo comportamento, podendo utiliza as tags e classes do css bootstrap porém com código angular.
 * Comando de instalação: `npm install ngx-bootstrap --save`.
 
-# Instruções
+### Imagens
+![Imagem 1](./BlogF1.png "Imagem 1")
+![Imagem 2](./BlogF2.png "Imagem 2")
+![Imagem 3](./BlogF3.png "Imagem 3")
+
+## Instruções
 Este projeto implementa a tela de visualização de post do "Blog do Figueiredo". Ele foi feito em Angular 10 e já possui os componentes e funcionalidades básicas para exibir um post e seus comentários. Um protótipo de alta fidelidade foi desenvolvido para a tela mas seu estilo ainda não foi replicado no projeto. Sua tarefa consistirá em:
 
 1. Modificar o código para que a seção de comentários mostre as respostas a um comentário de forma aninhada. A implementação atual mostra os comentários como uma lista.
 2. Replicar o estilo definido pelo [protótipo visual](https://www.figma.com/file/Zc4eaNKpuE2fLhL1cGzgLq/Prot%C3%B3tipo-para-o-teste-do-frontend?node-id=0%3A1).
 3. Propor e implementar botões de Reportar e Compartilhar em cada comentário
 
-# Instalação do projeto
+## Instalação do projeto
 
 A pilha tecnológica consiste em:
 
@@ -56,7 +63,7 @@ Conserte os erros indicados pelo TSLint:
 yarn ng lint --fix
 ```
 
-# Estrutura do projeto
+## Estrutura do projeto
 
 O projeto foi criado pela CLI do Angular, por isto possui diversos arquivos com os quais não precisaremos lidar para realizar a tarefa. O que é importante está presente nas pastas `src/assets` e `src/app`. Seguem explicações:
 

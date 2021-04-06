@@ -1,7 +1,6 @@
 # WayCarbon
 * Projeto de avaliação técnica para empresa WayCarom. 
-* Versão do [Angular CLI](https://github.com/angular/angular-cli)  <br>
-(Utilizei o notebook da empresa o qual a intalação do Angular de forma -g "global"). <br> 
+* Versão do [Angular CLI](https://github.com/angular/angular-cli) (Utilizei o notebook da empresa o qual a intalação do Angular de forma -g "global"). <br> 
 **Desenvolvido por Beatriz Givisiez**
 
 ## Bootstrap

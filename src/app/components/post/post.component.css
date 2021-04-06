@@ -8,10 +8,10 @@
     padding: 3em 0;
 }
 
-.post .titulo {
+.post .title {
     color: var(--preto);
     font-weight: bold !important;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 47px;
     top: 50px;
 }
@@ -20,6 +20,6 @@
     color: var(--cinza); 
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
 }

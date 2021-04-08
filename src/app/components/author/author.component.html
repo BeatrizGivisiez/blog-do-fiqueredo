@@ -1,5 +1,5 @@
 <div class="author" *ngIf="user">
   <img class="author-img" src="assets/avatar.jpg" [alt]="user.username">
   <div class="author-name">{{user.username}}</div>
-  <div class="author-subtitle">{{timestamp}}</div>
+  <div class="author-subtitle">{{timestamp | date:'dd/MM/yyyy HH:MM'}}</div>
 </div>

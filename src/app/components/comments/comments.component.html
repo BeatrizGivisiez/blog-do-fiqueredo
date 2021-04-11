@@ -2,12 +2,32 @@
 
 <section *ngFor="let comment of comments">
   <div class="line">
+    <div class="title">
+      {{ comment.author.username }} - <time>{{ comment.timestamp | date:'dd/MM/yyyy HH:MM'}}</time>
+    </div>
+
+
+    <div [innerText]="comment.content"></div>
+
+    <div class="answer">
+      <button class="btn btn-light" (click)="alerta()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon"> share </mat-icon>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- <h2>Comentários</h2>
+
+<section *ngFor="let comment of comments">
+  <div class="line">
     <div class="comentario" *ngIf="comment.respondsTo == null">
       <div class="title">
         {{ comment.author.username }} - <time>{{ comment.timestamp | date:'dd/MM/yyyy HH:MM' }}</time>
       </div>
       <div [innerText]="comment.content"></div>
-      <div class="resp">
+      <div class="answer">
         <button class="btn btn-light" (click)="alerta()">
           <mat-icon aria-hidden="false" aria-label="Example home icon"> share </mat-icon>
         </button>
@@ -21,7 +41,7 @@
             {{ resposta.author.username }} - <time>{{ resposta.timestamp | date:'dd/MM/yyyy HH:MM' }}</time>
           </div>
           <div [innerText]="resposta.content"></div>
-          <div class="resp">
+          <div class="answer">
             <button class="btn btn-light" (click)="alerta()">
               <mat-icon aria-hidden="false" aria-label="Example home icon"> share </mat-icon>
             </button>
@@ -30,4 +50,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->

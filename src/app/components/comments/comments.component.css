@@ -1,15 +1,15 @@
 .title{
-    color:#009AE0;
+    color: var(--blue);
     margin-top:1em;
 }
 
 .line{
-    border-left: 3px solid #FF9B52;
+    border-left: 3px solid var(--orange);
     padding-left: 15px;
 }
 
-.resp{
-    background: #FFFFFF;
-    border: 1px dashed #AAAAAA;
+.answer{
+    background: var(--white);
+    border: 1px dashed var(--grey);
     box-sizing: border-box;
 }

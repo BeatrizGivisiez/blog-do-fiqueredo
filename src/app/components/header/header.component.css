@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     height: 70px;
-    background: var(--azul);
+    background: var(--blue);
     padding-right: 0;
     padding-left: 0;
     margin-left: auto;
@@ -18,10 +18,10 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    color: var(--branco);
+    color: var(--white);
 }
 
-.header-image{
+.header-img{
     background: url('/assets/header-image.jpg'); 
     height: 493px;
     background-size: cover;

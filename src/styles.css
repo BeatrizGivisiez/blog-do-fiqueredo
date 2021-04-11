@@ -3,10 +3,11 @@
 
 /* Colors */
 :root {
-    --azul: #03A9F4;
-    --branco: #FFFFFF;
-    --preto: #000000;
-    --cinza: #939393;
+    --blue: #03A9F4;
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #939393;
+    --orange: #FF9B52;
 }
 
 /* Resets */
@@ -19,14 +20,14 @@
 /* Elementos base*/
 html { 
     box-sizing:border-box;
-    color: var(--preto);
+    color: var(--black);
     font-size:100%
 }
 
 body{
-    background: var(--branco);
+    background: var(--white);
     font-family: 'Roboto';    
-    color: var(--preto);
+    color: var(--black);
     margin: 0 auto;
  }
 
@@ -35,6 +36,6 @@ img { border:none;
 }
 
 a { 
-    color:#009AE0;
+    color: var(--blue);
     display:inline-block;
 }

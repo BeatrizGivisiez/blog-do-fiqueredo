@@ -1,5 +1,5 @@
 .author {
-    color:#1d1d1d;
+    color: var(--black);
     font-size:15px;
     line-height:22px;
     max-width:240px;
@@ -19,11 +19,11 @@
     left:0
 }
 .author-name {
-    color: var(--preto);
+    color: var(--black);
     font-size: 15px;
     position: relative;
 }
 .author-subtitle{
-    color: var(--cinza);
+    color: var(--grey);
     font-size:12px
 }

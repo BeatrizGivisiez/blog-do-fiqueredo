@@ -17,7 +17,8 @@
 ![Imagem 1](./BlogF1.png "Imagem 1")
 ![Imagem 2](./BlogF2.png "Imagem 2")
 ![Imagem 3](./BlogF3.png "Imagem 3")
-
+![Imagem 4](./BlogF4.png "Imagem 3")
+![Imagem 5](./BlogF5.png "Imagem 3")
 
 # Instruções:
 Este projeto implementa a tela de visualização de post do "Blog do Figueiredo". Ele foi feito em Angular 10 e já possui os componentes e funcionalidades básicas para exibir um post e seus comentários. Um protótipo de alta fidelidade foi desenvolvido para a tela mas seu estilo ainda não foi replicado no projeto. Sua tarefa consistirá em:

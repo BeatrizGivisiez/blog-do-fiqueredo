@@ -64,6 +64,18 @@ export default {
       },
       timestamp: '2019-02-28T08:21Z',
       content: 'Discordo veementemente, Clara!'
+    },
+    {
+      id: 6,
+      respondsTo: {
+        id: 5
+      },
+      author: {
+        id: 309,
+        username: 'Beatriz Givisiez'
+      },
+      timestamp: '2019-03-28T08:21Z',
+      content: 'Eu Discondo também junto da Clara!'
     }
   ]
 };

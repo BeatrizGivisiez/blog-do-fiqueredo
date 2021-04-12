@@ -13,3 +13,11 @@
     border: 1px dashed var(--grey);
     box-sizing: border-box;
 }
+
+.mat-icon {
+    margin-top: 5px !important;
+}
+
+.btn-light{
+    border-radius: 50%;
+}

@@ -4,4 +4,6 @@ export class CommentsModel {
     author: { id: number, username: string }
     timestamp: Date
     content: string
+    title: string
+    subtitle: string
 }

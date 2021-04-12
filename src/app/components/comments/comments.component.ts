@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CommentsModel } from './comments.model';
 
 @Component({
@@ -6,12 +6,19 @@ import { CommentsModel } from './comments.model';
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.css']
 })
-export class CommentsComponent {
+export class CommentsComponent implements OnInit {
   // TODO: Consertar a anotação de tipo após implementar a tranformação para árvore
   @Input() comments: CommentsModel[] = new Array<CommentsModel>();
 
-  public alerta() {
-    alert("Mensagem compartilhada com sucesso!")
+  public alertShare(id) {
+    alert("Sua mensagem foi compartilhada com sucesso!" + "\n" + "id do comentário: " + id)
+  }
+
+  public alertReport(id) {
+    alert("Sua mensagem foi reportada com sucesso!" + "\n" + "id do comentário: " + id)
+  }
+
+  ngOnInit() {
   }
 }
 

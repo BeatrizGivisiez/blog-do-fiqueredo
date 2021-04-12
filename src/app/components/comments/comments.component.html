@@ -2,52 +2,44 @@
 
 <section *ngFor="let comment of comments">
   <div class="line">
-    <div class="title">
-      {{ comment.author.username }} - <time>{{ comment.timestamp | date:'dd/MM/yyyy HH:MM'}}</time>
-    </div>
-
-
-    <div [innerText]="comment.content"></div>
-
-    <div class="answer">
-      <button class="btn btn-light" (click)="alerta()">
-        <mat-icon aria-hidden="false" aria-label="Example home icon"> share </mat-icon>
-      </button>
-    </div>
-
-  </div>
-</section>
-
-<!-- <h2>Comentários</h2>
-
-<section *ngFor="let comment of comments">
-  <div class="line">
     <div class="comentario" *ngIf="comment.respondsTo == null">
       <div class="title">
         {{ comment.author.username }} - <time>{{ comment.timestamp | date:'dd/MM/yyyy HH:MM' }}</time>
       </div>
       <div [innerText]="comment.content"></div>
-      <div class="answer">
-        <button class="btn btn-light" (click)="alerta()">
-          <mat-icon aria-hidden="false" aria-label="Example home icon"> share </mat-icon>
-        </button>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn btn-light" (click)="alertShare(comment.id)">
+            <mat-icon class="mat-icon" aria-hidden="false" aria-label="Share"> share </mat-icon>
+          </button>
+          <button class="btn btn-light" (click)="alertReport(comment.id)">
+            <mat-icon class="mat-icon" aria-hidden="false" aria-label="Report"> warning_amber </mat-icon>
+          </button>
+        </div>
+        <div class="col answer"> <br> </div>
       </div>
     </div>
 
-    <div *ngFor="let resposta of comments">
-      <div class="line">
-        <div *ngIf="resposta.respondsTo !== null && resposta.respondsTo.id == comment.id">
-          <div class="title">
-            {{ resposta.author.username }} - <time>{{ resposta.timestamp | date:'dd/MM/yyyy HH:MM' }}</time>
-          </div>
-          <div [innerText]="resposta.content"></div>
-          <div class="answer">
-            <button class="btn btn-light" (click)="alerta()">
-              <mat-icon aria-hidden="false" aria-label="Example home icon"> share </mat-icon>
+
+    <div class="line" *ngFor="let respond of comments">
+      <div *ngIf="respond.respondsTo !== null && respond.respondsTo.id == comment.id">
+        <div class="title">
+          {{ respond.author.username }} - <time>{{ respond.timestamp | date:'dd/MM/yyyy HH:MM' }}</time>
+        </div>
+        <div [innerText]="respond.content"></div>
+        <div class="row">
+          <div class="col-3">
+            <button class="btn btn-light" (click)="alertShare(comment.id)">
+              <mat-icon class="mat-icon" aria-hidden="false" aria-label="Share"> share </mat-icon>
+            </button>
+            <button class="btn btn-light" (click)="alertReport(comment.id)">
+              <mat-icon class="mat-icon" aria-hidden="false" aria-label="Report"> warning_amber </mat-icon>
             </button>
           </div>
+          <div class="col answer"> <br> </div>
         </div>
       </div>
     </div>
+
   </div>
-</section> -->
+</section>
